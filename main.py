@@ -13,4 +13,15 @@ def hi():
 print(hi())
 
 """
+from typing import Callable, Any
 
+
+def calculator(f, n1, n2):
+    return f(n1, n2)
+
+
+multiply = lambda n1, n2: n1 * n2
+print(calculator(multiply, 5, 4))
+
+add = lambda n1, n2: n1 + n2
+print(calculator(add, 5, 4))
